@@ -1,4 +1,4 @@
-package com.example.domain;
+package com.example.order.domain;
 
 public record OrderDetailDTO (
         String id,

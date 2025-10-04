@@ -1,8 +1,8 @@
-package com.example.controllers;
+package com.example.billing.controllers;
 
 
-import com.example.domain.BillingDTO;
-import com.example.service.BillingService;
+import com.example.billing.domain.BillingDTO;
+import com.example.billing.service.BillingService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

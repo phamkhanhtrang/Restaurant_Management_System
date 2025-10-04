@@ -1,7 +1,7 @@
-package com.example.facade;
+package com.example.customer.facade;
 
-import com.example.domain.CustomerDTO;
-import com.example.service.CustomerService;
+import com.example.customer.domain.CustomerDTO;
+import com.example.customer.service.CustomerService;
 import org.springframework.stereotype.Service;
 
 @Service

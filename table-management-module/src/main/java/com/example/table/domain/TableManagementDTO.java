@@ -1,4 +1,4 @@
-package com.example.domain;
+package com.example.table.domain;
 
 import java.time.LocalDateTime;
 

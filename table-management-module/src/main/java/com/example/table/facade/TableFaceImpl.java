@@ -1,7 +1,7 @@
-package com.example.facade;
+package com.example.table.facade;
 
-import com.example.domain.TableManagementDTO;
-import com.example.service.TableManagementService;
+import com.example.table.domain.TableManagementDTO;
+import com.example.table.service.TableManagementService;
 import org.springframework.stereotype.Service;
 
 @Service

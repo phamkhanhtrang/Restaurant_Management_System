@@ -1,4 +1,4 @@
-package com.example.domain;
+package com.example.menu.domain;
 
 public record MenuProductDTO(
         String id,

@@ -1,8 +1,8 @@
-package com.example.controllers;
+package com.example.menu.controllers;
 
-import com.example.domain.MenuCategoryDTO;
-import com.example.domain.MenuProductDTO;
-import com.example.service.MenuService;
+import com.example.menu.domain.MenuCategoryDTO;
+import com.example.menu.domain.MenuProductDTO;
+import com.example.menu.service.MenuService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

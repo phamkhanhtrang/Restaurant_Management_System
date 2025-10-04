@@ -1,12 +1,11 @@
-package com.example.domain;
+package com.example.order.domain;
 
 
-import com.example.rms.menu_module.domain.MenuProduct;
+//import com.example.domain.MenuProduct;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 @Entity

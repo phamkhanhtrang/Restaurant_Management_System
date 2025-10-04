@@ -1,8 +1,6 @@
-package com.example.domain;
+package com.example.customer.domain;
 
 import jakarta.annotation.Nullable;
-
-import java.time.LocalDateTime;
 
 public record CustomerDTO (
                             Long id,

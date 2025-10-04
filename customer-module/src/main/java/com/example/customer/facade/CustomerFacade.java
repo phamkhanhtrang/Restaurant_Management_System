@@ -1,9 +1,7 @@
-package com.example.facade;
+package com.example.customer.facade;
 
 
-import com.example.domain.CustomerDTO;
-import com.example.domain.CustomerProfileDTO;
-
+import com.example.customer.domain.CustomerDTO;
 
 public interface CustomerFacade {
         

@@ -1,7 +1,5 @@
-package com.example.facade;
+package com.example.billing.facade;
 
-import com.example.domain.Billing;
-import com.example.domain.BillingDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

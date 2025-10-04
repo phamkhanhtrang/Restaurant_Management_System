@@ -1,7 +1,7 @@
-package com.example.service;
+package com.example.customer.service;
 
-import com.example.domain.CustomerDTO;
-import com.example.domain.CustomerProfileDTO;
+import com.example.customer.domain.CustomerDTO;
+import com.example.customer.domain.CustomerProfileDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

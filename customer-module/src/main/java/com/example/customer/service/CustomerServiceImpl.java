@@ -1,11 +1,11 @@
-package com.example.service;
+package com.example.customer.service;
 
-import com.example.domain.CustomerProfile;
-import com.example.domain.CustomerProfileDTO;
-import com.example.domain.CustomerUser;
-import com.example.domain.CustomerDTO;
-import com.example.repository.CustomerProfileRepository;
-import com.example.repository.CustomerRepository;
+import com.example.customer.domain.CustomerProfile;
+import com.example.customer.domain.CustomerProfileDTO;
+import com.example.customer.domain.CustomerUser;
+import com.example.customer.domain.CustomerDTO;
+import com.example.customer.repository.CustomerProfileRepository;
+import com.example.customer.repository.CustomerRepository;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -22,14 +22,14 @@ public class CustomerServiceImpl implements CustomerService {
     
     private final CustomerRepository customerRepository;
     private final CustomerProfileRepository profileRepository;
-    private final PasswordEncoder passwordEncoder;
+//    private final PasswordEncoder passwordEncoder;
     
     public CustomerServiceImpl(CustomerRepository customerRepository,
                                CustomerProfileRepository profileRepository,
                                PasswordEncoder passwordEncoder) {
         this.customerRepository = customerRepository;
         this.profileRepository = profileRepository;
-        this.passwordEncoder = passwordEncoder;
+//        this.passwordEncoder = passwordEncoder;
     }
 
     @Override
@@ -37,7 +37,7 @@ public class CustomerServiceImpl implements CustomerService {
         CustomerUser user = new CustomerUser();
         user.setUuid(UUID.randomUUID().toString());
         user.setUserName(dto.userName());
-        user.setPassword(passwordEncoder.encode(dto.password()));
+        user.setPassword(dto.password());
         user.setActivated(dto.activated());
         user.setImageUrl(dto.imageUrl());
         
@@ -89,7 +89,7 @@ public class CustomerServiceImpl implements CustomerService {
         user.setImageUrl(dto.imageUrl());
         user.setActivated(dto.activated());
         if(dto.password()!=null && dto.password().isBlank()){
-            user.setPassword(passwordEncoder.encode(dto.password()));
+            user.setPassword(dto.password());
         }
         if(dto.profile()!= null){
             updateProfile(user.getId(), dto.profile());

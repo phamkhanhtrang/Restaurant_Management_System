@@ -1,7 +1,6 @@
-package com.example.service;
+package com.example.table.service;
 
-import com.example.domain.TableManagement;
-import com.example.domain.TableManagementDTO;
+import com.example.table.domain.TableManagementDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

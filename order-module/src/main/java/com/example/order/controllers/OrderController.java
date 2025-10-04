@@ -1,12 +1,11 @@
-package com.example.controllers;
+package com.example.order.controllers;
 
 
-import com.example.domain.OrderDTO;
-import com.example.service.OrderService;
+import com.example.order.domain.OrderDTO;
+import com.example.order.service.OrderService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.sound.midi.Track;
 import java.util.List;
 
 @RestController

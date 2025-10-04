@@ -1,7 +1,7 @@
-package com.example.service;
+package com.example.menu.service;
 
-import com.example.domain.MenuCategoryDTO;
-import com.example.domain.MenuProductDTO;
+import com.example.menu.domain.MenuCategoryDTO;
+import com.example.menu.domain.MenuProductDTO;
 
 import java.util.List;
 

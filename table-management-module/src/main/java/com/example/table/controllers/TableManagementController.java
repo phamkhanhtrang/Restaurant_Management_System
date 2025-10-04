@@ -1,8 +1,8 @@
-package com.example.controllers;
+package com.example.table.controllers;
 
 
-import com.example.domain.TableManagementDTO;
-import com.example.service.TableManagementService;
+import com.example.table.domain.TableManagementDTO;
+import com.example.table.service.TableManagementService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

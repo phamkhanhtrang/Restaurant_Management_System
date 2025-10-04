@@ -1,11 +1,11 @@
-package com.example.service;
+package com.example.menu.service;
 
-import com.example.domain.MenuCategory;
-import com.example.domain.MenuCategoryDTO;
-import com.example.domain.MenuProduct;
-import com.example.domain.MenuProductDTO;
-import com.example.repository.CategoryRepository;
-import com.example.repository.ProductRepository;
+import com.example.menu.domain.MenuCategory;
+import com.example.menu.domain.MenuCategoryDTO;
+import com.example.menu.domain.MenuProduct;
+import com.example.menu.domain.MenuProductDTO;
+import com.example.menu.repository.ProductRepository;
+import com.example.menu.repository.CategoryRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 

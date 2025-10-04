@@ -1,11 +1,10 @@
-package com.example.respository;
+package com.example.table.respository;
 
-import com.example.domain.TableManagement;
+import com.example.table.domain.TableManagement;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public interface TableManagementRepository extends JpaRepository <TableManagement, String>{

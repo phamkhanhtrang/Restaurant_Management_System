@@ -1,10 +1,9 @@
-package com.example.controllers;
+package com.example.customer.controllers;
 
-import com.example.domain.CustomerDTO;
-import com.example.domain.CustomerProfileDTO;
-import com.example.repository.CustomerRepository;
-import com.example.service.CustomerService;
-import jakarta.persistence.EntityNotFoundException;
+import com.example.customer.domain.CustomerDTO;
+import com.example.customer.domain.CustomerProfileDTO;
+import com.example.customer.repository.CustomerRepository;
+import com.example.customer.service.CustomerService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

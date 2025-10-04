@@ -1,7 +1,7 @@
-package com.example.facade;
+package com.example.menu.facade;
 
-import com.example.domain.MenuProductDTO;
-import com.example.service.MenuService;
+import com.example.menu.domain.MenuProductDTO;
+import com.example.menu.service.MenuService;
 import org.springframework.stereotype.Service;
 
 @Service

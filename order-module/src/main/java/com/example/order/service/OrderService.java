@@ -1,6 +1,6 @@
-package com.example.service;
+package com.example.order.service;
 
-import com.example.domain.OrderDTO;
+import com.example.order.domain.OrderDTO;
 
 import java.util.List;
 

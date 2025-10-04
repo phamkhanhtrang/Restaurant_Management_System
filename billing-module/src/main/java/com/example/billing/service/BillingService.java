@@ -1,6 +1,6 @@
-package com.example.service;
+package com.example.billing.service;
 
-import com.example.domain.BillingDTO;
+import com.example.billing.domain.BillingDTO;
 
 import org.springframework.stereotype.Service;
 

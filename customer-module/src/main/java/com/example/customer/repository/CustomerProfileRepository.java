@@ -1,7 +1,7 @@
-package com.example.repository;
+package com.example.customer.repository;
 
-import com.example.domain.CustomerProfile;
-import com.example.domain.CustomerUser;
+import com.example.customer.domain.CustomerProfile;
+import com.example.customer.domain.CustomerUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

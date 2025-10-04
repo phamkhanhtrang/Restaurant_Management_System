@@ -1,8 +1,8 @@
-package com.example.service;
+package com.example.table.service;
 
-import com.example.domain.TableManagement;
-import com.example.domain.TableManagementDTO;
-import com.example.respository.TableManagementRepository;
+import com.example.table.domain.TableManagement;
+import com.example.table.domain.TableManagementDTO;
+import com.example.table.respository.TableManagementRepository;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
