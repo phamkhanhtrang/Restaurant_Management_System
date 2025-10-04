@@ -1,0 +1,45 @@
+package com.example.rms.order_module.controllers;
+
+import com.example.rms.customer_module.domain.CustomerDTO;
+import com.example.rms.order_module.domain.OrderDTO;
+import com.example.rms.order_module.domain.OrderDetailDTO;
+import com.example.rms.order_module.service.OrderService;
+import jakarta.websocket.server.PathParam;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import javax.sound.midi.Track;
+import java.util.List;
+
+@RestController
+@RequestMapping("api/order")
+public class OrderController {
+    private final OrderService orderService;
+    
+    public OrderController(OrderService orderService) {
+        this.orderService = orderService;
+    }
+    
+    @GetMapping
+    public ResponseEntity<List<OrderDTO>> getAllOrders() {
+        return ResponseEntity.ok(orderService.getAllOrders());
+    }
+
+    @PostMapping
+    public ResponseEntity<OrderDTO> createOrder(@RequestBody OrderDTO dto) {
+        OrderDTO createdOrder = orderService.createOrder(dto);
+        return ResponseEntity.ok(createdOrder);
+    }
+    
+    @GetMapping("/{orderId}")
+    public ResponseEntity<OrderDTO> getOrderById(
+            @PathVariable String orderId) {
+        return ResponseEntity.ok(orderService.getOrderById(orderId));
+    }
+    
+    @DeleteMapping("/{orderId}")
+    public ResponseEntity<Void> deleteOrder(@PathVariable String orderId) {
+        orderService.deleteOrder(orderId);
+        return ResponseEntity.noContent().build();
+    }
+}
